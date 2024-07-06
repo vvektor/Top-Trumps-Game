@@ -1,4 +1,3 @@
-# logic.py
 import requests
 import random as rand
 from io import BytesIO
