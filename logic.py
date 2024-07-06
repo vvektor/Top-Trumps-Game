@@ -1,3 +1,4 @@
+# logic.py
 import requests
 import random as rand
 from io import BytesIO
@@ -30,19 +31,22 @@ def get_stats(poke_id):
     return pokemon_data["name"],  pokemon_data["height"], pokemon_data["weight"], pokemon_data["sprites"]["front_default"]
 
 def game_controller():
-    user_poke_id = rand.randint(1, 500)
+    user_cards = []
+    for _ in range(3):
+        user_poke_id = rand.randint(1, 500)
+        user_poke_name, user_poke_height, user_poke_weight, user_image = get_stats(user_poke_id)
+        user_card = pokemonCard(user_poke_id, user_poke_name, user_poke_height, user_poke_weight, user_image)
+        user_cards.append(user_card)
+
     ai_poke_id = rand.randint(1, 500)
-
-    user_poke_name, user_poke_height, user_poke_weight, user_image = get_stats(user_poke_id)
     ai_poke_name, ai_poke_height, ai_poke_weight, ai_image = get_stats(ai_poke_id)
-
-    user_card = pokemonCard(user_poke_id, user_poke_name, user_poke_height, user_poke_weight, user_image)
     ai_card = pokemonCard(ai_poke_id, ai_poke_name, ai_poke_height, ai_poke_weight, ai_image)
 
-    return user_card, ai_card
+    return user_cards, ai_card
 
 def fetch_image(url):
     response = requests.get(url)
     image_data = response.content
     image = Image.open(BytesIO(image_data))
-    return image
+    resized_image = image.resize((200, 200), Image.LANCZOS)
+    return resized_image
