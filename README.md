@@ -11,7 +11,7 @@
 - You can export all round results to a file by clicking "Export Score" button
 
 # Manual
-## Pick the Pokemon by cliking on its photo
+## Pick the Pokemon by clicking on its photo
 ![image](https://github.com/vvektor/Top-Trumps-Game/assets/74928810/0a492613-8e99-498f-9e6d-52bddd0cdd44)
 ## Choose a Stat to use against AI's Pokemon
 ![image](https://github.com/vvektor/Top-Trumps-Game/assets/74928810/1a83170e-85f7-4132-bced-ae97811b64f4)
