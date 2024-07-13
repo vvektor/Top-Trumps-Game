@@ -1,25 +1,54 @@
-# How to run this Game? 
-- make sure You have Python installed
-- download this repo
-- run "app.py"
+# Top Trumps Game - Star Wars or Pokemon
 
-# How to play this Game? 
-- Just click on the Stat that You want to fight with against AI
-- The popup window tells about the Game result
-- You can easily play another round the Game by clicking "Play Another Round" button
-- Score is shown on the top of the window
-- You can export all round results to a file by clicking "Export Score" button
+Welcome to the Top Trumps Game! This game allows you to experience the excitement of Top Trumps with two modes: Star Wars and Pokemon. Choose your mode, challenge AI, and see who comes out on top!
 
-# Manual
-## Pick the Pokemon by clicking on its photo
-![image](https://github.com/vvektor/Top-Trumps-Game/assets/74928810/0a492613-8e99-498f-9e6d-52bddd0cdd44)
-## Choose a Stat to use against AI's Pokemon
-![image](https://github.com/vvektor/Top-Trumps-Game/assets/74928810/1a83170e-85f7-4132-bced-ae97811b64f4)
-## Result window appears
-![image](https://github.com/vvektor/Top-Trumps-Game/assets/74928810/a435ae05-cf31-49d5-bfb3-34a1dda5321a)
-## You can see updated score on the top
-![image](https://github.com/vvektor/Top-Trumps-Game/assets/74928810/a7bae918-6a29-492a-aecf-daa023eb08d7)
-## Play as many rounds as You want!
-![image](https://github.com/vvektor/Top-Trumps-Game/assets/74928810/ad59bc06-7a4c-4ce7-8b57-31a1cf9cc7f7)
+## Features
 
-# Enjoy! Fight'em all!
+- **Dual Modes:** Select between Star Wars and Pokemon themes.
+- **Data Integration:** Utilizes the PokeAPI and SWAPI to fetch real-time data for Pokemon and Star Wars characters.
+- **User-Friendly GUI:** Built with Python and Tkinter for a smooth gaming experience.
+- **Dynamic Gameplay:** Each game is unique and random with real-time data fetching.
+
+## How to Play
+
+1. **Choose Your Mode:**
+   - **Star Wars:** Dive into the galaxy far, far away and battle with iconic Star Wars characters.
+   - **Pokemon:** Enter the world of Pokemon and compete with your favorite creatures.
+
+2. **Start the Game:**
+   - Select your preferred mode from the main menu.
+   - The game will fetch data from the respective API and set up your deck.
+
+3. **Gameplay:**
+   - Each player is dealt a random character or Pokemon from the selected mode.
+   - Players take turns choosing a stat to compete with (e.g. id, height, weight, etc.).
+   - The player with the higher stat wins the round.
+
+## Requirements
+
+- Python 3.x
+- Tkinter library
+- Internet connection (for API data fetching)
+
+## APIs Used
+
+- **PokeAPI:** [https://pokeapi.co/api/v2/pokemon/](https://pokeapi.co/api/v2/pokemon/)
+- **SWAPI:** [https://swapi.dev/api/people/](https://swapi.dev/api/people/)
+
+## License
+
+This project is licensed under the MIT License.
+The software makes use of characters from the Star Wars franchise; all Star Wars 
+character names, images, and related properties are trademarks and copyrights 
+of Lucasfilm Ltd. and/or its affiliates, and the author does not claim any ownership 
+rights to these characters or their depictions.
+
+---
+
+Enjoy the game and may the Force be with you, or catch 'em all!
+
+---
+
+**Author:** Julia Hryń
+**Version:** 1.0.0  
+**Date:** 2024-07-13
